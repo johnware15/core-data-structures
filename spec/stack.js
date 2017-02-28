@@ -1,6 +1,6 @@
-import chai, { expect } from 'chai'
+  import chai, { expect } from 'chai'
 import chaiChange from 'chai-change'
-import Stack from '../src/stack'
+import Stack from '../src/stack1'
 
 chai.use(chaiChange)
 
@@ -14,7 +14,7 @@ describe('Stack', () => {
   context('push()', () => {
     it('pushes an element to the top of the stack.', () => {
       const myStack = new Stack()
-
+      console.log(myStack)
       expect(() => myStack.push('foo'))
         .to.alter(() => myStack.length(), { from: 0, to: 1 })
     })

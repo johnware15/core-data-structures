@@ -1,4 +1,4 @@
-  import chai, { expect } from 'chai'
+import chai, { expect } from 'chai'
 import chaiChange from 'chai-change'
 import Stack from '../src/stack1'
 

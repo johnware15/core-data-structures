@@ -1,3 +1,5 @@
+"use strict"
+
 // const set      = new Set(['A', 'B', 'C'])
 // const otherSet = new Set(['B', 'C', 'E'])
 // set.add('D')             // adds an element to the set.
@@ -12,49 +14,56 @@
 // set.isSubset(otherSet)   // returns true if the set is a subset of otherSet or false if not.
 // set.clone()              // returns a cloned set.
 
-'use strict'
 
+class dataSet {
+    constructor () {
+      this.content = foo;
+    }
+}
 export default class Set {
 
     constructor() {
-        this.dataSet = [];
-        this.size = length || 0;
+        let set = Set
+        // this.size = length || 0;
     }
-
-
-
-    add(setItem) {
-        this.size += 1;
-        this.dataSet.add();
+	add() {
+       set.add(setItem);
     }
     emptyOrNot(){
-    	dataSet.isEmpty();
+    	set.isEmpty();
     	}
     isItInHere(){
-    	dataSet.contains(setItem);
+    	set.contains(setItem);
     }
     getItOut(){
-    	if(dataSet.contains(setItem)){
-    		dataSet.remove(setItem);
+    	if(set.contains(setItem)){
+    		set.remove(setItem);
     	} else {
     		console.log("nobody but us chickens");
     	}
     }
     doItToAllOfThem(){
-    	dataSet.forEach(dataItem => console.log(dataItem));
+    	set.forEach(dataItem => console.log(dataItem));
     }
-
+    howBigIsIt(){
+    	set.add(setItem);
+    	set.add(setItem);
+    	set.size();
+    }
 }
 
 
 
 
-const set = new Set();
-set.add('red')
 
-> set.has('red')
-true
-> set.delete('red')
-true
-> set.has('red')
-false
+
+const set      = new Set(['A', 'B', 'C']);
+ const otherSet = new Set(['B', 'C', 'E'])
+// set.add('red')
+
+// > set.has('red')
+// true
+// > set.delete('red')
+// true
+// > set.has('red')
+// false

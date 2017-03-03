@@ -23,6 +23,9 @@ class dataSet {
 export default class Set {
 
     constructor() {
+      
+
+
        this.values = [];
        this.numberOfValues = 0;
         // this.size = length || 0;
@@ -52,9 +55,9 @@ forEach(){
 
 
     size(){
-    	set.add(setItem);
-    	set.add(setItem);
-    	set.size();
+    //	set.add(setItem);
+    //	set.add(setItem);
+    	return this.index;
     }
     union(){
         let newSet = new Set();
@@ -84,7 +87,7 @@ forEach(){
         })
     }
 }
-
+}
 
 
 

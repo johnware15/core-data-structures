@@ -29,28 +29,30 @@ export default class Set {
 	add() {
        set.add(setItem);
     }
-    emptyOrNot(){
-    	set.isEmpty();
-    	}
-    isItInHere(){
+    isEmpty(){
+    	set.isEmpty(setItem);
+    		}
+    contains(){
     	set.contains(setItem);
     }
-    getItOut(){
+    remove(){
     	if(set.contains(setItem)){
     		set.remove(setItem);
     	} else {
     		console.log("nobody but us chickens");
     	}
     }
-    doItToAllOfThem(){
+    forEach(){
     	set.forEach(dataItem => console.log(dataItem));
     }
-    howBigIsIt(){
+    size(){
     	set.add(setItem);
     	set.add(setItem);
     	set.size();
     }
 }
+
+
 
 
 

@@ -16,5 +16,24 @@
   "scripts": {
     "build": "babel src -d lib",
     "test": "mocha --compilers js:babel-register ./spec/*.js"
-  }
+  },
+  "main": "index.js",
+  "dependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.16.1",
+    "lint": "^1.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnware15/core-data-structures.git"
+  },
+  "keywords": [
+    "data-structures"
+  ],
+  "author": "john ware and erika harvey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnware15/core-data-structures/issues"
+  },
+  "homepage": "https://github.com/johnware15/core-data-structures#readme"
 }

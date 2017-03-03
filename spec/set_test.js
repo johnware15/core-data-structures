@@ -25,8 +25,8 @@ describe('set', () => {
   context('isEmpty()',() => {
   	 it("checks to see fi its empty or not", () =>{
   	 	const set = new Set()
-  	 	set.isEmpty("")
-  	 	expect(set.isEmpty(""))
+  	
+  	 	expect(set.isEmpty())
   	 	.to.be.true;
   	 })
   	})

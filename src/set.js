@@ -23,32 +23,65 @@ class dataSet {
 export default class Set {
 
     constructor() {
-        let set = Set
+       this.values = [];
+       this.numberOfValues = 0;
         // this.size = length || 0;
     }
 	add() {
-       set.add(setItem);
+       if(!~this.values.indexOf(value)){
+        this.values.push(value);
+        this.numberOfValues++;
+       }
+    
     }
-    isEmpty(){
-    	set.isEmpty(setItem);
-    		}
-    contains(){
-    	set.contains(setItem);
-    }
-    remove(){
-    	if(set.contains(setItem)){
-    		set.remove(setItem);
-    	} else {
-    		console.log("nobody but us chickens");
-    	}
-    }
-    forEach(){
-    	set.forEach(dataItem => console.log(dataItem));
-    }
+   remove(){
+  let index = this.values.indexOf(value);
+  if(~index){
+    this.values.splice(index, 1);
+    this.numberOfValues --;
+  }
+}
+contains(){
+  return this.values.indexOf(value)!== -1;
+  this.numberOfValues--;
+}
+forEach(){
+  set.values.forEach(() =>{
+    newSet.add(value);
+  })
+
+
     size(){
     	set.add(setItem);
     	set.add(setItem);
     	set.size();
+    }
+    union(){
+        let newSet = new Set();
+        set.values.forEach(()=>{
+            newSet.add(value);
+        })
+    }
+    intersect(){
+        let newSet = new Set();
+        this.values.forEach(() => {
+            if(set.contains(value)){
+                newSet.add(value);
+            }
+        })
+    }
+    difference(){
+        let newSet = new Set();
+        this.values.forEach(() =>{
+            if(!set.contains(value)){
+                newSet.add(value)
+            }
+        })
+    }
+    isSubset(){
+        return set.values.every(()=>{
+            return.this.contains(value);
+        })
     }
 }
 

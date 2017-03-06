@@ -21,18 +21,19 @@ this.items = [];
 // push(element){
 // this.items.push(element);
 // }
-clear()  {
-  this.items = [];
-}
-size(){
-return this.items.length;
-if(this.items != []){
-
-return true;
-}
-else{
-return false;
-}
+// clear()  {
+//   this.items = [];
+// }
+length(){
+return Stack.items.length;
+console.log(length())
+// if(this.items != []){
+//
+// return true;
+// }
+// else{
+// return false;
+// }
 }
 
 }

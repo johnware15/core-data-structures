@@ -10,3 +10,14 @@ describe('Stack', () => {
 it('exists', () => {
 expect(Stack).to.be.a('function')
 })
+
+context('length()', () => {
+  const myStack = new Stack()
+  expect(() => (Stack.length).to.be.a('value')
+
+)
+}
+
+
+)
+})
